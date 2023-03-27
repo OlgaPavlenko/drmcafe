@@ -5,6 +5,7 @@ import { Layout } from './pages/Layout/Layout';
 import { Main } from './pages/Main/Main';
 import { NoPage } from './pages/NoPage/NoPage';
 import { SingUp } from './SingUp/SingUp';
+import './App.css';
 
 const App: FunctionComponent = () => {
   return (

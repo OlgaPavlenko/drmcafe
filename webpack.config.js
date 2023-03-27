@@ -35,31 +35,22 @@ module.exports = {
         loader: 'ts-loader',
       },
       {
-        test: /\.(woff|woff2|eot|ttf|svg)$/,
-        exclude: /node_modules/,
-        loader: 'file-loader',
-        options: {
-          limit: 1024,
-          name: '[name].[ext]',
-          publicPath: 'assets/fonts/',
-          outputPath: 'assets/fonts/',
-        },
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(css|less)$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
         exclude: /node_modules/,
-        loader: 'file-loader',
-        options: {
-          limit: 1024,
-          name: '[name].[ext]',
-          publicPath: 'assets/images/',
-          outputPath: 'assets/images/',
-        },
+        use: ['file-loader?name=[name].[ext]'], // ?name=[name].[ext] is only necessary to preserve the original file name
       },
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.css'],
   },
 };
 

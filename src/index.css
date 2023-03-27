@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'SingleFlashing';
+  font-weight: bold; /*Can be any text*/
+  src: local('SingleFlashing'), url('./assets/fonts/Single-Flashing.ttf') format('truetype');
+}
+
