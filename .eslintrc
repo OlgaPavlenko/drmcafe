@@ -23,20 +23,20 @@
     "plugins": ["react", "@typescript-eslint", "prettier"],
     "rules": {
       "react/react-in-jsx-scope": "off",
-      "react/prop-types": 0,
-      "react/jsx-filename-extension": 0,
-      "comma-dangle": 0,
-      "import/prefer-default-export": 0,
-      "no-confusing-arrow": 0,
-      "arrow-body-style": 0,
+      "react/prop-types": "off",
+      "react/jsx-filename-extension": "off",
+      "comma-dangle": "off",
+      "import/prefer-default-export": "off",
+      "no-confusing-arrow": "off",
+      "arrow-body-style": "off",
       "no-array-index-key": "off",
-      "implicit-arrow-linebreak": 0,
-      "react/jsx-curly-newline": 0,
-      "object-curly-newline": 0,
-      "function-paren-newline": 0,
+      "implicit-arrow-linebreak": "off",
+      "react/jsx-curly-newline": "off",
+      "object-curly-newline": "off",
+      "function-paren-newline": "off",
       "no-case-declarations": "off",
-      "no-prototype-builtins": 0,
-      "operator-linebreak": 0,
+      "no-prototype-builtins": "off",
+      "operator-linebreak": "off",
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": ["error"],
       "no-use-before-define": "off",
@@ -59,7 +59,7 @@
         }
       ],
       "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-var-requires": "off",
       "@typescript-eslint/explicit-function-return-type": [
         "error",
         {
@@ -77,3 +77,4 @@
     }
   }
 }
+

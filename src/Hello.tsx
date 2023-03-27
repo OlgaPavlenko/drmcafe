@@ -1,3 +1,6 @@
-const Hello = () => <h1>YO from React!</h1>;
+import { FunctionComponent } from 'react';
 
-export default Hello;
+export const Hello: FunctionComponent = () => {
+  return <div>Hello</div>;
+};
+
