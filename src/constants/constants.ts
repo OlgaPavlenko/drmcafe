@@ -1,7 +1,7 @@
 export const ROUTE_PATHS = {
   layout: '/',
   login: 'login',
-  singUp: 'singUp',
+  singUp: 'createAcc',
   noPage: '*',
 };
 
