@@ -6,17 +6,18 @@ import { Main } from './pages/Main/Main';
 import { NoPage } from './pages/NoPage/NoPage';
 import { SingUp } from './SingUp/SingUp';
 import './App.css';
+import { ROUTE_PATHS } from './constants/constants';
 
 const App: FunctionComponent = () => {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path={ROUTE_PATHS.layout} element={<Layout />}>
             <Route index element={<Main />} />
-            <Route path="login" element={<Login />} />
-            <Route path="createAcc" element={<SingUp />} />
-            <Route path="*" element={<NoPage />} />
+            <Route path={ROUTE_PATHS.login} element={<Login />} />
+            <Route path={ROUTE_PATHS.singUp} element={<SingUp />} />
+            <Route path={ROUTE_PATHS.noPage} element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
