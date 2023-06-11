@@ -7,7 +7,7 @@ export const Layout: FunctionComponent = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Main</Link>
+            <Link to="/main">Main</Link>
           </li>
           <li>
             <Link to="/createAcc">SingUp</Link>

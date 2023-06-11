@@ -1,19 +1,19 @@
 export const ROUTE_PATHS = [
   {
     path: 'main',
-    component: '<Main />',
+    component: 'Main /',
   },
   {
     path: 'login',
-    component: '<Login />',
+    component: 'Login /',
   },
   {
     path: 'createAcc',
-    component: '<SingUp />',
+    component: 'SingUp /',
   },
   {
     path: '*',
-    component: '<NoPage />',
+    component: 'NoPage /',
   },
 ];
 
