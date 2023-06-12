@@ -1,18 +1,11 @@
-import {
-  FunctionComponent,
-  ReactComponentElement,
-  ReactElement,
-  ReactFragment,
-  ReactHTML,
-  ReactNode,
-} from 'react';
+import { FunctionComponent, ReactElement } from 'react';
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from './pages/Layout/Layout';
 import './App.css';
 import { ROUTE_LAYOUT, ROUTE_PATHS } from './constants/constants';
 
 const App: FunctionComponent = () => {
-  let render: ReactNode;
+  let render: ReactElement;
   return (
     <div className="App">
       <BrowserRouter>
