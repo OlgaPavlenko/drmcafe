@@ -1,6 +1,5 @@
 import { FunctionComponent, ReactElement } from 'react';
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Layout } from './pages/Layout/Layout';
 import './App.css';
 import { ROUTE_LAYOUT, ROUTE_PATHS } from './constants/constants';
 
