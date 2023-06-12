@@ -1,7 +1,9 @@
+import { Main } from '../pages/Main/Main';
+
 export const ROUTE_PATHS = [
   {
     path: 'main',
-    component: 'Main /',
+    component: <Main />,
   },
   {
     path: 'login',

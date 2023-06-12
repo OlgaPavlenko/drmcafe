@@ -1,4 +1,11 @@
-import { FunctionComponent, ReactNode } from 'react';
+import {
+  FunctionComponent,
+  ReactComponentElement,
+  ReactElement,
+  ReactFragment,
+  ReactHTML,
+  ReactNode,
+} from 'react';
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from './pages/Layout/Layout';
 import './App.css';
