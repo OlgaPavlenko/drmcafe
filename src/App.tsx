@@ -10,7 +10,7 @@ const App: FunctionComponent = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path={ROUTE_LAYOUT.path} element={<Layout />}>
+          <Route path={ROUTE_LAYOUT.path} element={ROUTE_LAYOUT.component}>
             {ROUTE_PATHS.map((item, index) => {
               item.path === 'main'
                 ? (render = <Route key={index} index path={item.path} element={item.component} />)
